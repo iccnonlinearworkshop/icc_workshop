@@ -102,9 +102,9 @@ th {
 }
 
 .speaker-photo img {
-    width: 140px;
-    height: 140px;
-    object-fit: cover;
+    width: 100%;
+    max-width: 160px;
+    height: auto;
     border-radius: 10px;
 }
 
@@ -122,12 +122,12 @@ th {
         padding-right: 0;
     }
 
-    .speaker-photo img {
-        width: 120px;
-        height: 120px;
-        margin-top: 15px;
-    }
-
+   .speaker-photo img {
+    max-width: 140px;
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+}
     /* Reduce hero title size */
     .hero h1 {
         font-size: 30px;

@@ -1,3 +1,4 @@
+/* General Page Settings */
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -5,6 +6,19 @@ body {
     color: #222;
 }
 
+/* Logo Header */
+.header-logo {
+    text-align: center;
+    background: white;
+    padding: 20px 0;
+}
+
+.icc-logo {
+    width: 220px;
+    height: auto;
+}
+
+/* Hero Section */
 .hero {
     background: #003366;
     color: white;
@@ -32,6 +46,7 @@ body {
     margin-top: 20px;
 }
 
+/* Section Container */
 .section {
     background: white;
     margin: 20px auto;
@@ -45,6 +60,11 @@ body {
     color: #003366;
     border-left: 5px solid #003366;
     padding-left: 10px;
+}
+
+/* Table Styling */
+.table-container {
+    overflow-x: auto; /* Fix mobile overflow */
 }
 
 table {
@@ -64,6 +84,7 @@ th {
     color: white;
 }
 
+/* Speaker Layout */
 .speaker-row {
     display: flex;
     justify-content: space-between;
@@ -87,17 +108,37 @@ th {
     border-radius: 10px;
 }
 
+/* 📱 Mobile Fixes */
 @media (max-width: 600px) {
+
+    /* Speakers */
     .speaker-row {
         flex-direction: column;
         text-align: center;
+        padding: 15px;
+    }
+
+    .speaker-text {
+        padding-right: 0;
     }
 
     .speaker-photo img {
+        width: 120px;
+        height: 120px;
         margin-top: 15px;
+    }
+
+    /* Reduce hero title size */
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 16px;
     }
 }
 
+/* Footer */
 .footer {
     text-align: center;
     background: #003366;
@@ -105,14 +146,3 @@ th {
     padding: 15px;
     margin-top: 40px;
 }
-.header-logo {
-    text-align: center;
-    background: white;
-    padding: 20px 0;
-}
-
-.icc-logo {
-    width: 220px;
-    height: auto;
-}
-
